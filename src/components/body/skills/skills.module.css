@@ -1,0 +1,26 @@
+.section {
+    background-color: rgb(31, 30, 30);
+}
+
+.section .h2 {
+    color: rgb(255, 255, 255);
+
+}
+
+.section .ul {
+ display: flex;
+ flex-wrap: wrap;
+ background-color: grb(31, 30, 30);
+list-style: none;
+}
+
+.section .ul .li{
+
+}
+
+.section .ul .img {
+    padding: 5px;
+    max-width: 100px;
+    max-height: 100px;
+
+}
