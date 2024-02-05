@@ -1,5 +1,5 @@
 .section {
-    background-color: rgb(31, 30, 30);
+    background-color: rgb(15, 15, 15);
 }
 
 .section .h2 {
@@ -10,7 +10,7 @@
 .section .ul {
  display: flex;
  flex-wrap: wrap;
- background-color: grb(31, 30, 30);
+ background-color: rgb(15, 15, 15);
 list-style: none;
 }
 
