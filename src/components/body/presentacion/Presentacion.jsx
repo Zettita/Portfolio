@@ -6,9 +6,11 @@ export default function Presentacion() {
     <section className={styles.section} id='acercaDeMi'>
         <h3 className={styles.h3}>Acerca de mi</h3>
         <img src={fotoPerfil} alt="Foto de Perfil" className={styles.fotoPerfil} />
-        <p className={styles.p}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni accusantium, cum dolor corrupti beatae praesentium doloribus excepturi animi iste distinctio ipsam fuga placeat eveniet ut harum ipsa culpa rem iure?
-        Placeat expedita, dolores quidem suscipit libero porro dolorum magni voluptate magnam sapiente illum, repellat esse eius minima impedit vitae laboriosam nam a eveniet fugiat provident doloribus. Voluptatem cum distinctio voluptatibus.
-        Facere, numquam porro. Odio repudiandae quidem dolor deleniti repellat asperiores ut suscipit cum illo optio, architecto quisquam fuga culpa aut dolores dolorem eveniet, quos in. Magni excepturi nam quibusdam quo.</p> 
+        <p className={styles.p}>Mi perfil laboral está centrado en el ámbito administrativo y tecnológico, dos áreas que 
+considero fundamentales en el mundo actual. Sin embargo, mi pasión por la tecnología 
+va más allá de la gestión, ya que aspiro a convertirme en un desarrollador Full Stack. Mi 
+objetivo es combinar mis habilidades administrativas con un conocimiento técnico 
+profundo para crear soluciones innovadoras y eficientes.</p> 
     </section>
     </>
   )
