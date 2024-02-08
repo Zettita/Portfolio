@@ -11,9 +11,8 @@
         margin-top: 3.5rem;
         gap: 1.5rem;
         padding: 0;
-        height: 100vh;
-        object-fit: contain;
-        
+        height: 85vh;
+        overflow: hidden;
         
     }
 
