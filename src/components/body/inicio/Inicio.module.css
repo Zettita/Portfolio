@@ -1,134 +1,126 @@
-@media screen and (max-width: 480px) { 
-    *{
-        transition: all .5s linear;
-    }
-    .section {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        /* align-items: center; */
-        background-color: rgb(15, 15, 15);
-        margin-top: 3.5rem;
-        gap: 1.5rem;
-        padding: 0;
-        height: 85vh;
-        overflow: hidden;
-        
-    }
+@media screen and (max-width: 480px) {
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    background-color: rgb(15, 15, 15);
+    /* margin-top: 3.5rem; */
+    padding: 0;
+    height: 85vh;
+    overflow: hidden;
+    height: 90vh;
+  }
 
-    .section .fondo {
-        position: absolute;
-        top: 9.5vh;
-        z-index: 0;
-        width: 100%;
-        height: 90%;
-        filter: blur(1.5px);
-        padding: 0;
-        margin: 0;
-        border: none;
-        
-    }
-    
-    .section .h2 {
-        z-index: 10;
-        color: wheat;
-        font-size: clamp(2.5rem,10dvw,3rem);
-        margin: 1.5rem;
-        text-align: center;
-    }
-    
-    .section .h3FED {
-        z-index: 11;
-        color: rgb(255, 255, 255);
-        margin: 1.5rem;
-        font-size: clamp(1.5rem,10dvw,1.7rem);
-        text-align: center;
-    
-    
-        
-    }
-    
-    .section .h3 {
-        z-index: 12;
-        color: rgb(255, 255, 255);
-        margin: 1.5rem;
-        font-size: clamp(1.5rem,10dvw,1.7rem);
-        align-self: center;
-        
-    }
-    .section .h3 .guionActive {
-        display: block;
+  .section .fondo {
+    position: absolute;
+    top: 9.5vh;
+    z-index: 0;
+    width: 100%;
+    height: 90vh;
+    filter: blur(1.5px);
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
 
-        
-    }
-    
-    
-    .section .h3 .guion {
-        display: none;
-        transition: all .2s ease;
-    }
-    
-    .section .div {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     z-index: 14;
-    }
-    
-    .section .div .p {
-            color: rgb(255, 255, 255);
-;
-        padding: .5rem;
-    }
-    
-    .section .div .button {
-        border: none;
-        border-radius: 20px;
-        padding: .5rem;
-        margin: 1.5rem;
-        border: 1px solid white;
-        transition: all .5s ease;
-        background-color: rgb(255, 255, 255);
-        
-        
-        &:hover{
-            transform: scale(1.2);
-            background-color: rgb(31, 30, 30);
-                color: rgb(255, 255, 255);
-;
-            border: 1px solid white;
-        }
-        
-    }
+  .section .h2 {
+    z-index: 10;
+    color: wheat;
+    font-size: clamp(2.5rem, 10dvw, 3rem);
+    /* margin: 1.5rem; */
+    text-align: center;
+    padding: 1rem;
+  }
 
-    .section .div .button .a {
-        text-decoration: none;
-        color:  rgb(31, 30, 30);
-        height: 500px;
-        width: 80px;
-        transition: all .2s ease;
-        &:hover {
-                color: rgb(255, 255, 255);
-;
-        }
-    }
+  .section .h3FED {
+    z-index: 11;
+    color: rgb(255, 255, 255);
+    /* margin: 1.5rem; */
+    font-size: clamp(1.5rem, 10dvw, 1.7rem);
+    text-align: center;
+    padding: 1rem;
+  }
 
-    .section .div .button .a .svg {
-        font-size: clamp(1.5rem,10dvw,2rem);
-        transition: all .2s ease;
-        
-    }
+  .section .h3 {
+    z-index: 12;
+    color: rgb(255, 255, 255);
+    /* margin: 1.5rem; */
+    font-size: clamp(1.5rem, 10dvw, 1.7rem);
+    align-self: center;
+    padding: 1rem;
+  }
 
-    .section .flecha {
-        margin: 1rem;
-        max-width: 5rem;
-        align-self: center;
-        z-index: 15;
-    }
+  .section .h3FED .guion {
+    color: white;
+  }
 
-    .section .down {
-        transform: translateY(30px);
+  .section .h3FED .guion .active {
+  }
+
+  .section .h3FED .guionDisabled {
+    visibility: hidden;
+  }
+
+  .section .div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 14;
+  }
+
+  .section .div .p {
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+  }
+
+  .section .div .button {
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin: 1.5rem;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+    background-color: rgb(255, 255, 255);
+
+    &:hover {
+      transform: scale(1.2);
+      background-color: rgb(31, 30, 30);
+      color: rgb(255, 255, 255);
+      border: 1px solid white;
     }
+  }
+
+  .section .div .button .a {
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+    height: 500px;
+    width: 80px;
+    transition: all 0.2s ease;
+    &:hover {
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .section .div .button .a .svg {
+    font-size: clamp(1.5rem, 10dvw, 2rem);
+    transition: all 0.2s ease;
+  }
+
+  .section .flecha {
+    padding: 0.5rem;
+    max-width: 5rem;
+    align-self: center;
+    z-index: 15;
+    transform: translateY(0px);
+  }
+
+  .section .down {
+    padding: 0.5rem;
+    max-width: 5rem;
+    align-self: center;
+    z-index: 15;
+    transform: translateY(30px);
+  }
 }
-
-

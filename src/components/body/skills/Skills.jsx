@@ -1,31 +1,47 @@
-import imagen from "./logo.webp";
 import styles from "./skills.module.css";
+import { SiJavascript, SiHtml5, SiCss3, SiReact, SiBootstrap, SiPython, SiFigma, SiMysql, SiGit, SiDocker } from "react-icons/si";
 
 export default function Skills() {
   return (
     <>
       <section className={styles.section} id="skills">
         <h2 className={styles.h2}>Skills</h2>
+        <div className={styles.div}>
         <ul className={styles.ul}>
           <li className={styles.li}>
-            <img className={styles.img} src={imagen} alt="logo Default" />
+          <SiJavascript className={styles.img} />
           </li>
           <li className={styles.li}>
-            <img className={styles.img} src={imagen} alt="logo Default" />
+          <SiHtml5 className={styles.img} />
           </li>
           <li className={styles.li}>
-            <img className={styles.img} src={imagen} alt="logo Default" />
+          <SiCss3 className={styles.img} />
           </li>
           <li className={styles.li}>
-            <img className={styles.img} src={imagen} alt="logo Default" />
+          <SiReact className={styles.img} />
           </li>
           <li className={styles.li}>
-            <img className={styles.img} src={imagen} alt="logo Default" />
+            < SiDocker className={styles.img} />
+          </li>
+          </ul>
+          <ul className={styles.ul}>
+          <li className={styles.li}>
+          <SiBootstrap className={styles.img} />
           </li>
           <li className={styles.li}>
-            <img className={styles.img} src={imagen} alt="logo Default" />
+          <SiPython className={styles.img} />
+          </li>
+          <li className={styles.li}>
+          <SiFigma className={styles.img} />
+          </li>
+          <li className={styles.li} >
+          <SiMysql className={styles.img} />
+          </li>
+          <li className={styles.li} >
+          <SiGit className={styles.img} />
           </li>
         </ul>
+        </div>
       </section>
     </>
   );
