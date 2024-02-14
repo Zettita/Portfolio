@@ -6,12 +6,6 @@ import imagen from "../../../assets/icons8-abajo-90.png";
 import fondo from "../../../assets/papers.co-ax42-coding-dark-computer-bokeh-illustration-art-black-34-iphone6-plus-wallpaper.jpg";
 export default function Inicio() {
 
-  const guion = document.getElementById("guion");
-  setInterval(() => {
-    guion.classList.toggle("guionDisabled")
-
-
-  }, 1500)
   return (
     <>
       <section className={styles.section}>
@@ -24,12 +18,12 @@ export default function Inicio() {
         </h3>
         <div className={styles.div}>
           <button className={styles.button}>
-            <a href={cv} download className={styles.a}>
+            <a href="mailto:uriel.solnik@gmail.com" className={styles.a}>
               <SiGmail className={styles.svg} />
             </a>
           </button>
           <button className={styles.button}>
-            <a href={cv} download className={styles.a}>
+            <a href="https://wa.me/5491169653078" className={styles.a}>
               <FaWhatsapp className={styles.svg} />
             </a>
           </button>
@@ -43,7 +37,7 @@ export default function Inicio() {
           className={styles.flecha}
           id="flecha"
           src={imagen}
-          alt="lalalala"
+          alt="Flecha animada"
         />
 
       </section>

@@ -1,16 +1,97 @@
-.section {
-    background-color: rgb(15, 15, 15);
+@media screen and (max-width: 768px) {
+    .section {
+        background-color: rgb(15, 15, 15);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      padding: 1rem 0 1rem 0;
+    
+        
+    }
+    
+    .section .h3 {
+        color: wheat;
+            padding: 1rem;
+            margin: 0;
+            font-weight: 700;
+            font-size: clamp(1.5rem, 10dvw, 1.7rem);
+    
+    }
+    
+    .section .div {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+.section .ulRow {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+        background-color: rgb(15, 15, 15);
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 2rem;
+        justify-content: center;
+
+}
+
+.section .ulRow .li{
+    
+        padding: .5rem;
     
 }
 
-.section .h2 {
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    font-weight: 700;
+.section .ulRow .img {
+    padding: 5px;
+    font-size: 3.5rem;
+    color: rgb(100, 100, 100);
+    &:hover {
+       filter: drop-shadow(1px 1px 5px rgb(224, 224, 224));
+    }
+}
+    
+    .section .ul {
+        display: none;
+        flex-wrap: wrap;
+        background-color: rgb(15, 15, 15);
+        list-style: none;
+        
+        width: 100%;
+        margin: 0;
+       
+        padding: 2rem;
+    }
+    
+    
+   
+
+
+
+}
+
+@media screen and (max-width: 520px) {
+
+.section {
+      background-color: rgb(40, 40, 40);
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  padding: 1rem 0 1rem 0;
+
+    
+}
+
+.section .h3 {
     color: wheat;
+        padding: 1rem;
+        margin: 0;
+        font-weight: 700;
+        font-size: clamp(1.5rem, 10dvw, 1.7rem);
 
 }
 
@@ -25,7 +106,10 @@
 .section .ul {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(15, 15, 15);
+      background-color: rgb(40, 40, 40);
+
+
+    
     list-style: none;
     flex-direction: column;
     width: 100%;
@@ -36,7 +120,9 @@
     padding: 2rem;
 }
 
-
+.section .ulRow {
+    display: none;
+}
 
 .section .ul .li{
 padding: .5rem;
@@ -45,6 +131,10 @@ padding: .5rem;
 .section .ul .img {
     padding: 5px;
     font-size: 4rem;
-    color: white
-
+    color: rgb(100, 100, 100);
+    &:hover {
+       filter: drop-shadow(1px 1px 5px rgb(185, 185, 185));
+    }
 }
+}
+

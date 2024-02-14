@@ -1,28 +1,29 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   
   .section {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     /* align-items: center; */
     background-color: rgb(15, 15, 15);
     /* margin-top: 3.5rem; */
-    padding: 0;
-    height: 85vh;
+    padding: 1rem 0 1rem 0;
     overflow: hidden;
     height: 90vh;
+    position: relative;
+  
   }
 
   .section .fondo {
     position: absolute;
-    top: 9.5vh;
     z-index: 0;
+    top: 0;
     width: 100%;
-    height: 90vh;
+    height: 100%;
     filter: blur(1.5px);
     padding: 0;
-    margin: 0;
     border: none;
+    
   }
 
   .section .h2 {
@@ -54,14 +55,10 @@
 
   .section .h3FED .guion {
     color: white;
+    animation: activeDisable 1s infinite
   }
 
-  .section .h3FED .guion .active {
-  }
-
-  .section .h3FED .guionDisabled {
-    visibility: hidden;
-  }
+ 
 
   .section .div {
     display: flex;
@@ -113,14 +110,28 @@
     max-width: 5rem;
     align-self: center;
     z-index: 15;
-    transform: translateY(0px);
+    animation: slideUpDown 1s infinite alternate;
   }
 
-  .section .down {
-    padding: 0.5rem;
-    max-width: 5rem;
-    align-self: center;
-    z-index: 15;
-    transform: translateY(30px);
+  @keyframes slideUpDown {
+    0% {
+      transform : translateY(0)
+    }
+    100% {
+      transform: translateY(30px)
+    }
+  }
+
+  @keyframes activeDisable {
+0% {
+      visibility:visible;
+   }
+
+   50% {
+    visibility: hidden;
+   }
+100% {
+      visibility:hidden;
+}
   }
 }

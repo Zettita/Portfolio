@@ -55,12 +55,12 @@ export default function Header() {
             </a>
           </li>
           <li className={styles.li}>
-            <a href="" className={styles.a} onClick={toggle}>
+            <a href="#proyectos" className={styles.a} onClick={toggle}>
               Proyectos
             </a>
           </li>
           <li className={styles.li}>
-            <a href="#a" className={styles.a} onClick={toggle}>
+            <a href="#contacto" className={styles.a} onClick={toggle}>
               Contacto
             </a>
           </li>

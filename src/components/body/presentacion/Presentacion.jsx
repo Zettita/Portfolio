@@ -1,4 +1,4 @@
-import fotoPerfil from '../../../assets/fotoPerfil.jpg'
+import fotoPerfil from '../../../assets/fotoPerfil.png'
 import styles from './presentacion.module.css'
 export default function Presentacion() {
   return (

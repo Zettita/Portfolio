@@ -1,0 +1,50 @@
+@media screen and (max-width: 520px) {
+  .footer {
+    background-color: rgb(20, 20, 20);
+    border: 1px solid white;
+    border-width: 1px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .footer .h2 {
+    color: white;
+    
+    font-size: 2rem;
+  }
+
+  .footer .ul {
+    list-style: none;
+    margin: 0;
+    gap: 1rem;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .footer .ul .li {
+    color: white;
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: start;
+  }
+
+  .footer .ul .li .a{
+   text-decoration: none;
+   color: rgb(245, 245, 220); 
+  }
+
+  .footer .span {
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-size: 0.8rem;
+  }
+
+  
+}

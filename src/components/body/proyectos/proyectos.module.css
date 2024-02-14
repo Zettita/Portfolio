@@ -1,0 +1,298 @@
+@media screen and (max-width: 768px) {
+  .section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      background-color: rgb(40, 40, 40);
+
+
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+  }
+  
+  .section .h3 {
+    color: wheat;
+          padding: 1rem;
+          margin: 0;
+          font-weight: 700;
+          font-size: clamp(1.5rem, 10dvw, 1.7rem);
+  }
+  
+  .section .container {
+    display: grid;
+    position: relative;
+    max-width: 65%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    height: auto;
+    margin: 0;
+    background-color: rgb(100, 100, 100);;
+    box-shadow: 1px 1px 4px grey;
+  }
+  
+  .section .container .divFlechas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .section .container .divFlechas .flechaIzquierda {
+    color: white;
+    z-index: 20;
+    font-size: 2rem;
+    padding: .5rem;
+  }
+  
+  .section .container .divFlechas .flechaDerecha {
+    color: white;
+    z-index: 21;
+    font-size: 2rem;
+    padding: .5rem;
+  }
+  
+  .section .container .div {
+    display: flex;
+    width: 200%;
+    align-items: center;
+    
+    
+    
+  }
+  
+  .section .container .div .card {
+    width: calc(100% / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+  }
+  
+  .section .container .div .card .divCard {
+    width: 80%;
+    height: 40%;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .divImagen {
+    z-index: 9;
+    height: 60%;
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    
+    /* text-align: center; */
+  }
+  
+  .section .container .div .card .divImagen .img {
+    margin: 0;
+    width: 100%;
+    object-fit: contain;
+    padding: 10px;
+    border-radius: 15px;
+    
+  }
+  
+  .section .container .div .card .divCard .h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: .8rem;
+  }
+  
+  .section .container .div .card .divCard .p {
+    color: white;
+    padding: .8rem;
+    font-size: .8rem;
+  }
+  
+  .section .container .div .card .divCard .divIconos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+  .section .container .div .card .divCard .divIconos .a {
+    z-index: 10;
+    width: 100%;
+    padding: .8rem;
+  
+   
+  }
+  .section .container .div .card .divCard .divIconos .a .icon {
+    color: white;
+    font-size: 1.5rem;
+    z-index: 9;
+    
+  
+    
+  }
+  }
+
+@media screen and (max-width: 520px) {
+
+.section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    background-color: rgb(40, 40, 40);
+
+
+  margin: 0;
+  padding: 1rem 0 1rem 0;
+}
+
+.section .h3 {
+  color: wheat;
+        padding: 1rem;
+        margin: 0;
+        font-weight: 700;
+        font-size: clamp(1.5rem, 10dvw, 1.7rem);
+}
+
+.section .container {
+  display: grid;
+  position: relative;
+  max-width: 90%;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  height: auto;
+  margin: 0;
+  box-shadow: 1px 1px 4px grey;
+}
+
+.section .container .divFlechas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(80, 80, 80);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.section .container .divFlechas .flechaIzquierda {
+  color: white;
+  z-index: 20;
+  font-size: 2rem;
+  padding: .5rem;
+}
+
+.section .container .divFlechas .flechaDerecha {
+  color: white;
+  z-index: 21;
+  font-size: 2rem;
+  padding: .5rem;
+}
+
+.section .container .div {
+  display: flex;
+  width: 200%;
+  align-items: center;
+  
+  
+  
+}
+
+.section .container .div .card {
+  width: calc(100% / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+.section .container .div .card .divCard {
+  width: 80%;
+  height: 40%;
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.divImagen {
+  z-index: 9;
+  height: 60%;
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+  
+  /* text-align: center; */
+}
+
+.section .container .div .card .divImagen .img {
+  margin: 0;
+  width: 100%;
+  object-fit: contain;
+  padding: 10px;
+  border-radius: 15px;
+  
+}
+
+.section .container .div .card .divCard .h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: .8rem;
+}
+
+.section .container .div .card .divCard .p {
+  color: white;
+  padding: .8rem;
+  font-size: .8rem;
+}
+
+.section .container .div .card .divCard .divIconos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.section .container .div .card .divCard .divIconos .a {
+  z-index: 10;
+  width: 100%;
+  padding: .8rem;
+
+ 
+}
+.section .container .div .card .divCard .divIconos .a .icon {
+  color: white;
+  font-size: 1.5rem;
+  z-index: 9;
+  
+
+  
+}
+}
+
