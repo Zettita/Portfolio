@@ -1,103 +1,186 @@
-@media screen and (max-width: 768px) {
-  *{
-    transition: all .5s linear;
+/* mobile styles */
+
+  * {
+    transition: all 0.5s linear;
   }
-.header {
+  .header {
     position: sticky;
     top: 0;
-  align-items: center;
-  background-color: rgb(40, 40, 40);
-
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  z-index: 1000;
-  height: 10vh;
-  padding: 1rem;
-  margin: 0;
-  overflow: hidden;
-
-}
-
-.header .h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
-  padding: 10px;
-  padding: 0;
-  margin: 0;
-  color: wheat;;
-}
-
-.header .button {
-  background-color: rgb(40, 40, 40);
-  border: 0;
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
-  width: 2rem;
-  height: 2rem;
-}
-
-.header .button .svg {
-  cursor: pointer;
-  fill: white;
-  margin: .8rem;
-  padding: 0;
-  margin: 0;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
   
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1000;
+    height: 10vh;
+    padding: 1rem;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+    padding: 0;
+    margin: 0;
+    color: wheat;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  .button {
+    background-color: rgb(40, 40, 40);
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    width: 2rem;
+    height: 2rem;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  .svg {
+    cursor: pointer;
+    fill: white;
+    margin: 0.8rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 150%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 8%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  
+  .ul {
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .li {
+    list-style: none;
+    margin: 1.5rem;
+  }
+  
+  .a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .activo {
+    background-color: grey;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 8%;
+    width: 100%;
+    transition: all 0.3s ease-in;
+  }
+
+  
+
+/* small tablets and laptop styles */
+@media  screen and (min-width: 768px) {
+  .header {
+    position: sticky;
+    top: 0;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 100;
+    height: 10vh;
+    padding: 1rem;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+    padding: 0;
+    margin: 0;
+    color: wheat;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+  }
+  .button {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    position: initial;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .li {
+    display: block;
+    color: white;
+  }
+
+  .a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+    pointer-events: visible;
+  }
+  
+  .activo {
+    display: flex;
+    position: initial;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+/* desktop styles */
+@media  screen and (min-width: 1200px) {
   
 }
 
-.header .nav {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  left: 150%;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  top: 8%;
-  width: 100%;
-  transition: all .3s ease-in-out;
-  pointer-events: none;
-}
+/* animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    scale: 0.5;
+    transform: translateY(-50px);
+  }
 
-.header .ul {
-  align-items: center;
-  background-color: rgb(40, 40, 40);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
- 
-}
-
-.header .ul .li {
-  list-style: none;
-  margin: 1.5rem;
-}
-
-.header .ul .li .a {
-      color: rgb(255, 255, 255);
-;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-
-.header .activo {
-  background-color: grey;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  left: 0%;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  top: 8%;
-  width: 100%;
-  transition: all .3s ease-in;
-}
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0px);
+  }
 }

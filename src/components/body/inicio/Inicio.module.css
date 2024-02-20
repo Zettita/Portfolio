@@ -1,16 +1,20 @@
-@media screen and (max-width: 768px) {
+/* mobile styles */
+
+
   
   .section {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     /* align-items: center; */
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(40, 40, 40);
     /* margin-top: 3.5rem; */
     padding: 1rem 0 1rem 0;
     overflow: hidden;
     height: 90vh;
     position: relative;
+    gap: 1.5rem;
+  
   
   }
 
@@ -33,6 +37,7 @@
     /* margin: 1.5rem; */
     text-align: center;
     padding: 1rem;
+    animation: fadeIn 1s ease;
   }
 
   .section .h3FED {
@@ -42,6 +47,7 @@
     font-size: clamp(1.5rem, 10dvw, 1.7rem);
     text-align: center;
     padding: 1rem;
+    animation: fadeIn 1s ease;
   }
 
   .section .h3 {
@@ -51,6 +57,7 @@
     font-size: clamp(1.5rem, 10dvw, 1.7rem);
     align-self: center;
     padding: 1rem;
+    animation: fadeIn 1s ease;
   }
 
   .section .h3FED .guion {
@@ -80,6 +87,7 @@
     border: 1px solid white;
     transition: all 0.5s ease;
     background-color: rgb(255, 255, 255);
+    animation: fadeIn 1s ease;
 
     &:hover {
       transform: scale(1.2);
@@ -110,28 +118,179 @@
     max-width: 5rem;
     align-self: center;
     z-index: 15;
+    animation: fadeIn 1s ease;
+
     animation: slideUpDown 1s infinite alternate;
   }
 
-  @keyframes slideUpDown {
-    0% {
-      transform : translateY(0)
-    }
-    100% {
-      transform: translateY(30px)
+
+ 
+
+/* small tablets and laptop styles */
+@media screen and (min-width: 768px) {
+  
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(40, 40, 40);
+    padding: 1rem 0 1rem 0;
+    overflow: hidden;
+    height: 90vh;
+    position: relative;
+    gap: 1.5rem;
+  
+  }
+
+  .section .fondo {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(1.5px);
+    padding: 0;
+    border: none;
+    
+  }
+
+  .section .h2 {
+    z-index: 10;
+    color: wheat;
+    font-size: clamp(2.5rem, 10dvw, 3rem);
+    /* margin: 1.5rem; */
+    text-align: center;
+    padding: 1rem;
+    animation: fadeIn 1s ease;
+  }
+
+  .section .h3FED {
+    z-index: 11;
+    color: rgb(255, 255, 255);
+    /* margin: 1.5rem; */
+    font-size: clamp(1.5rem, 10dvw, 1.7rem);
+    text-align: center;
+    padding: 1rem;
+    animation: fadeIn 1s ease;
+  }
+
+  .section .h3 {
+    z-index: 12;
+    color: rgb(255, 255, 255);
+    /* margin: 1.5rem; */
+    font-size: clamp(1.5rem, 10dvw, 1.7rem);
+    align-self: center;
+    padding: 1rem;
+    animation: fadeIn 1s ease;
+  }
+
+  .section .h3FED .guion {
+    color: white;
+    animation: activeDisable 1s infinite
+  }
+
+ 
+
+  .section .div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 14;
+  }
+
+  .section .div .p {
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+  }
+
+  .section .div .button {
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin: 1.5rem;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+    background-color: rgb(255, 255, 255);
+    animation: fadeIn 1s ease;
+
+    &:hover {
+      transform: scale(1.2);
+      background-color: rgb(31, 30, 30);
+      color: rgb(255, 255, 255);
+      border: 1px solid white;
     }
   }
 
-  @keyframes activeDisable {
-0% {
-      visibility:visible;
-   }
+  .section .div .button .a {
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+    height: 500px;
+    width: 80px;
+    transition: all 0.2s ease;
+    &:hover {
+      color: rgb(255, 255, 255);
+    }
+  }
 
-   50% {
-    visibility: hidden;
-   }
-100% {
-      visibility:hidden;
+  .section .div .button .a .svg {
+    font-size: clamp(1.5rem, 10dvw, 2rem);
+    transition: all 0.2s ease;
+  }
+
+  .section .flecha {
+    padding: 0.5rem;
+    max-width: 5rem;
+    align-self: center;
+    z-index: 15;
+    animation: fadeIn 1s ease;
+
+    animation: slideUpDown 1s infinite alternate;
+  }
+
+  
 }
+
+
+/* desktop styles */
+@media  screen and (min-width: 1200px) {
+  
+}
+
+/* animations */
+@keyframes slideUpDown {
+  0% {
+    transform : translateY(0)
   }
+  100% {
+    transform: translateY(30px)
+  }
+}
+
+@keyframes activeDisable {
+0% {
+    visibility:visible;
+ }
+
+ 50% {
+  visibility: hidden;
+ }
+100% {
+    visibility:hidden;
+}
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+      scale: 0.5;
+      transform: translateY(50px);
+  }
+  
+  to {
+    opacity: 1;
+      scale: 1;
+      transform: translateY(0px);
+  }
+
 }

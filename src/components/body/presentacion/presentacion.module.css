@@ -1,49 +1,155 @@
+/* mobile styles */
 
-@media screen and (max-width: 768px) {
     .section {
+        align-items: center;
+        background-color: rgb(40, 40, 40);
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-          background-color: rgb(40, 40, 40);
-
-
-
         margin: 0;
         padding: 1rem 0 1rem 0;
+        
 
-        
-        
     }
 
+    .section .div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
 
     .section .h3 {
         color: wheat;
-        padding: 1rem;
-        margin: 0;
-        font-weight: 700;
         font-size: clamp(1.5rem, 10dvw, 1.7rem);
+        font-weight: 700;
+        margin: 0;
+        padding: 1rem;
+        /* view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: fadeIn;
+        animation-range: entry 5% cover 50%; */
+        
+       
     }
 
-
- .section .fotoPerfil {
+    .section .fotoPerfil {
+        border-radius: 20%;
+        margin: 1rem;
         max-height: 200px;
         min-width: 200px;
-        border-radius: 50%;
-        padding: .5rem;
-        margin: 1rem;
+        padding: 0.5rem;
+        /* view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: fadeIn;
+        animation-range: entry 5% cover 50%; */
+        
     }
 
-
     .section .p {
-        width: 90%;
-        color: rgb(255, 255, 255);
-        padding: .5rem;
         border: 1px solid wheat;
         border-radius: 5px;
+        color: rgb(180, 180, 180);
+
+        padding: 0.5rem;
         text-align: justify;
-        text-wrap:  balance;
-        /* box-shadow: 3px 1px 4px wheat;  */
+        text-wrap: balance;
+        width: 90%;
+        /* view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: fadeIn;
+        animation-range: entry 5% cover 50%; */
+        
+       
+    }
+
+    
+
+
+@media screen and (min-width: 768px) {
+    .section {
+        align-items: center;
+        background-color: rgb(40, 40, 40);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem 0 1rem 0;
+        
+
+    }
+
+    .section .div {
+        padding: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .section .h3 {
+        color: wheat;
+        font-size: clamp(1.5rem, 10dvw, 1.7rem);
+        font-weight: 700;
+        margin: 0;
+        padding: 1rem;
+        /* view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: fadeIn;
+        animation-range: entry 5% cover 50%; */
+        
+       
+    }
+
+    .section .fotoPerfil {
+        border-radius: 50%;
+        margin: 1rem;
+        min-height: 250px ;
+        min-width: 40%;
+        padding: 0.5rem;
+        /* view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: fadeIn;
+        animation-range: entry 5% cover 50%; */
+        
+    }
+
+    .section .p {
+        border: 1px solid wheat;
+        border-radius: 5px;
+        color: rgb(180, 180, 180);
+
+        padding: 1rem;
+        text-align: justify;
+        text-wrap: balance;
+        width: 60%;
+        /* view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: fadeIn;
+        animation-range: entry 5% cover 50%; */
+        
+       
+    }
+
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        scale: 0.5;
+        transform: translateY(50px);
+    }
+    
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0px);
     }
 
 }

@@ -1,7 +1,7 @@
 import styles from "./proyectos.module.css";
 import foto from "../../../assets/series.png";
 import foto2 from "../../../assets/cotizador.png";
-import { SiGithub } from "react-icons/si";
+import { SiGithub, SiHtml5, SiCss3, SiJavascript, SiReact } from "react-icons/si";
 import { FaLink } from "react-icons/fa6";
 
 export default function Proyectos() {
@@ -14,6 +14,7 @@ export default function Proyectos() {
 
   const goLeft = () => {
     const div = document.getElementById("div");
+    // div.style.transition = `translateX(0px)`
     div.style.transform = `translateX(0px)`;
   };
 
@@ -22,12 +23,11 @@ export default function Proyectos() {
       <section className={styles.section} id="proyectos">
         <h3 className={styles.h3}>Proyectos</h3>
         <div className={styles.container}>
-        
-        <div className={styles.divFlechas}>
+          <div className={styles.divFlechas}>
             <span className={styles.flechaIzquierda} onClick={() => goLeft()}>
               {"<"}
             </span>
-             <span className={styles.flechaDerecha} onClick={() => goRight()}>
+            <span className={styles.flechaDerecha} onClick={() => goRight()}>
               {">"}
             </span>
           </div>
@@ -39,7 +39,18 @@ export default function Proyectos() {
               </div>
               <div className={styles.divCard}>
                 <h3 className={styles.h3}>Z Show </h3>
-                <p className={styles.p}>asdasdasd asdasdasd</p>
+                <p className={styles.p}>Sitio de TV Shows</p>
+                <ul className={styles.ul}>
+                  <li className={styles.li}>
+                    <SiJavascript className={styles.js} />
+                  </li>
+                  <li className={`${styles.li} ${styles.html}`}>
+                    <SiHtml5 className={styles.html} />
+                  </li>
+                  <li className={styles.li}>
+                    <SiCss3 className={styles.css} />
+                  </li>
+                </ul>
                 <div className={styles.divIconos}>
                   <a
                     className={styles.a}
@@ -64,6 +75,20 @@ export default function Proyectos() {
               <div className={styles.divCard}>
                 <h3 className={styles.h3}>Cotizador</h3>
                 <p className={styles.p}>Hecho con React</p>
+                <ul className={styles.ul}>
+                  <li className={styles.li}>
+                    <SiJavascript className={styles.js} />
+                  </li>
+                  <li className={`${styles.li} ${styles.html}`}>
+                    <SiHtml5 className={styles.html} />
+                  </li>
+                  <li className={styles.li}>
+                    <SiCss3 className={styles.css} />
+                  </li>
+                  <li className={styles.li}>
+                    <SiReact className={styles.react} />
+                  </li>
+                </ul>
                 <div className={styles.divIconos}>
                   <a
                     className={styles.a}
@@ -82,8 +107,6 @@ export default function Proyectos() {
               </div>
             </div>
           </div>
-          
-         
         </div>
       </section>
     </>

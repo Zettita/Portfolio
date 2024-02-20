@@ -39,7 +39,7 @@ export default function Inicio() {
           src={imagen}
           alt="Flecha animada"
         />
-
+  
       </section>
     </>
   );

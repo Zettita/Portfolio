@@ -1,23 +1,26 @@
 @media screen and (max-width: 768px) {
     .section {
-        background-color: rgb(15, 15, 15);
+        background-color: rgb(40, 40, 40);
         display: flex;
         flex-direction: column;
         align-items: center;
-      padding: 1rem 0 1rem 0;
-    
-        
+        padding: 1rem 0 1rem 0;
     }
-    
+
     .section .h3 {
         color: wheat;
-            padding: 1rem;
-            margin: 0;
-            font-weight: 700;
-            font-size: clamp(1.5rem, 10dvw, 1.7rem);
-    
+        padding: 1rem;
+        margin: 0;
+        font-weight: 700;
+        font-size: clamp(1.5rem, 10dvw, 1.7rem);
+        /* view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-range: entry 5% cover 50%; */
     }
-    
+
     .section .div {
         display: flex;
         justify-content: center;
@@ -26,115 +29,131 @@
         box-sizing: border-box;
     }
 
-.section .ulRow {
-    display: flex;
-    flex-wrap: wrap;
-        background-color: rgb(15, 15, 15);
+    .section .ulRow {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(40, 40, 40);
         list-style: none;
         width: 100%;
         margin: 0;
         padding: 2rem;
         justify-content: center;
-
-}
-
-.section .ulRow .li{
-    
-        padding: .5rem;
-    
-}
-
-.section .ulRow .img {
-    padding: 5px;
-    font-size: 3.5rem;
-    color: rgb(100, 100, 100);
-    &:hover {
-       filter: drop-shadow(1px 1px 5px rgb(224, 224, 224));
     }
-}
+
+    .section .ulRow .li {
+        padding: 0.5rem;
+        
+    }
+
     
+
+    .section .ulRow .img {
+        padding: 5px;
+        font-size: 3.5rem;
+        color: rgb(100, 100, 100);
+
+        &:hover {
+            filter: drop-shadow(1px 1px 5px rgb(224, 224, 224));
+        }
+    }
+
     .section .ul {
         display: none;
         flex-wrap: wrap;
         background-color: rgb(15, 15, 15);
         list-style: none;
-        
+
         width: 100%;
         margin: 0;
-       
+
         padding: 2rem;
     }
     
-    
-   
-
-
-
 }
 
 @media screen and (max-width: 520px) {
+    .section {
+        background-color: rgb(40, 40, 40);
 
-.section {
-      background-color: rgb(40, 40, 40);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0 1rem 0;
+    }
 
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  padding: 1rem 0 1rem 0;
-
-    
-}
-
-.section .h3 {
-    color: wheat;
+    .section .h3 {
+        color: wheat;
         padding: 1rem;
         margin: 0;
         font-weight: 700;
         font-size: clamp(1.5rem, 10dvw, 1.7rem);
+        /* view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-range: entry 5% cover 50%; */
+    }
 
-}
+    .section .div {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-.section .div {
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    .section .ul {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(40, 40, 40);
 
-.section .ul {
-    display: flex;
-    flex-wrap: wrap;
-      background-color: rgb(40, 40, 40);
+        list-style: none;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        flex-grow: 1;
 
+        flex-grow: 1;
+        padding: 2rem;
+    }
 
-    
-    list-style: none;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    flex-grow: 1;
- 
-    flex-grow: 1;
-    padding: 2rem;
-}
+    .section .ulRow {
+        display: none;
+    }
 
-.section .ulRow {
-    display: none;
-}
+    .section .ul .li {
+        padding: 0.5rem;
+        /* view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-range: entry 5% cover 50%; */
+    }
 
-.section .ul .li{
-padding: .5rem;
-}
+    .section .ul .img {
+        padding: 5px;
+        font-size: 4rem;
+        color: rgb(140, 140, 140);
 
-.section .ul .img {
-    padding: 5px;
-    font-size: 4rem;
-    color: rgb(100, 100, 100);
-    &:hover {
-       filter: drop-shadow(1px 1px 5px rgb(185, 185, 185));
+        &:hover {
+            filter: drop-shadow(1px 1px 5px rgb(185, 185, 185));
+        }
     }
 }
-}
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        scale: 0.5;
+        transform: translateY(150px);
+    }
+    
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0px);
+    }
+
+}
