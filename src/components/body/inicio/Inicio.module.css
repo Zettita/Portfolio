@@ -1,5 +1,4 @@
 /* mobile styles */
-
 .section {
   align-items: center;
   background-color: rgb(40, 40, 40);
@@ -82,8 +81,9 @@
   animation: fadeIn 1s ease;
   background-color: rgb(255, 255, 255);
   border: none;
-  border: 1px solid white;
-  border-radius: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   margin: 1.5rem;
   padding: 0.5rem;
   transition: all 0.5s ease;
@@ -101,7 +101,7 @@
   height: 500px;
   text-decoration: none;
   transition: all 0.2s ease;
-  width: 80px;
+  width: 100%;
 
   &:hover {
     color: rgb(255, 255, 255);
@@ -111,6 +111,7 @@
 .section .div .button .a .svg {
   font-size: clamp(1.5rem, 10dvw, 2rem);
   transition: all 0.2s ease;
+  text-align: center;
 }
 
 .section .flecha {

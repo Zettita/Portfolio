@@ -1,7 +1,7 @@
 /* mobile styles */
 .section {
   align-items: center;
-  background-color: rgb(40, 40, 40);
+  /* background-color: rgb(40, 40, 40); */
   display: flex;
   flex-direction: column;
   height: auto;
@@ -202,7 +202,7 @@
 @media screen and (min-width: 555px) {
   .section {
     align-items: center;
-    background-color: rgb(40, 40, 40);
+    /* background-color: rgb(40, 40, 40); */
     display: flex;
     flex-direction: column;
     height: auto;

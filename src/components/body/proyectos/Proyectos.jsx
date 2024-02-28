@@ -74,14 +74,14 @@ export default function Proyectos() {
                   </li>
                 </ul>
                 <div className={styles.divIconos}>
-                  <a
+                  <a target="_blank" rel="noopener noreferrer"
                     className={styles.a}
                     href="https://github.com/Zettita/PROYECTO2-URIELEDUARDO-SOLNIK"
                   >
                     <SiGithub className={styles.icon} />
                   </a>
 
-                  <a
+                  <a target="_blank" rel="noopener noreferrer"
                     className={styles.a}
                     href="https://zettita.github.io/PROYECTO2-URIELEDUARDO-SOLNIK/index.html"
                   >
@@ -112,14 +112,14 @@ export default function Proyectos() {
                   </li>
                 </ul>
                 <div className={styles.divIconos}>
-                  <a
+                  <a target="_blank" rel="noopener noreferrer"
                     className={styles.a}
                     href="https://github.com/Zettita/PROYECTO3-URIEL-SOLNIK"
                   >
                     <SiGithub className={styles.icon} />
                   </a>
 
-                  <a
+                  <a target="_blank" rel="noopener noreferrer"
                     className={styles.a}
                     href="https://cotizador-solnik.netlify.app/"
                   >
@@ -150,14 +150,14 @@ export default function Proyectos() {
                   </li>
                 </ul>
                 <div className={styles.divIconos}>
-                  <a
+                  <a target="_blank" rel="noopener noreferrer"
                     className={styles.a}
                     href="https://github.com/Zettita/PROYECTO2-URIELEDUARDO-SOLNIK"
                   >
                     <SiGithub className={styles.icon}/>
                   </a>
 
-                  <a
+                  <a target="_blank" rel="noopener noreferrer"
                     className={styles.a}
                     href="https://zettita.github.io/PROYECTO2-URIELEDUARDO-SOLNIK/index.html"
                   >
@@ -188,14 +188,14 @@ export default function Proyectos() {
                   </li>
                 </ul>
                 <div className={styles.divIconos}>
-                  <a
+                  <a target="_blank" rel="noopener noreferrer"
                     className={styles.a}
                     href="https://github.com/Zettita/PROYECTO3-URIEL-SOLNIK"
                   >
                     <SiGithub className={styles.icon} />
                   </a>
 
-                  <a
+                  <a target="_blank" rel="noopener noreferrer"
                     className={styles.a}
                     href="https://cotizador-solnik.netlify.app/"
                   >

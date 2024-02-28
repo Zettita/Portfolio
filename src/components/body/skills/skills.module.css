@@ -1,6 +1,6 @@
 /* mobile styles */
     .section {
-        background-color: rgb(40, 40, 40);
+        /* background-color: rgb(40, 40, 40); */
 
         display: flex;
         flex-direction: column;
@@ -33,7 +33,7 @@
     .section .ul {
         display: flex;
         flex-wrap: wrap;
-        background-color: rgb(40, 40, 40);
+        /* background-color: rgb(40, 40, 40); */
 
         list-style: none;
         flex-direction: column;
@@ -63,15 +63,17 @@
         padding: 5px;
         font-size: 4rem;
         color: rgb(140, 140, 140);
+        transition: .5s all linear;
 
         &:hover {
-            filter: drop-shadow(1px 1px 5px rgb(185, 185, 185));
+            transform: rotate(360deg);
+            filter: drop-shadow(0 0 5px rgb(255, 255, 255));
         }
     }
 
 @media screen and (min-width: 768px) {
     .section {
-        background-color: rgb(40, 40, 40);
+        /* background-color: rgb(40, 40, 40); */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -107,7 +109,7 @@
     .section .ulRow {
         display: flex;
         flex-wrap: wrap;
-        background-color: rgb(40, 40, 40);
+        /* background-color: rgb(40, 40, 40); */
         list-style: none;
         width: 100%;
         margin: 0;
