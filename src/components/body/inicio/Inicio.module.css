@@ -1,201 +1,199 @@
 /* mobile styles */
 
+.section {
+  align-items: center;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 90vh;
+  justify-content: center;
+  overflow: hidden;
+  /* margin-top: 3.5rem; */
+  padding: 1rem 0 1rem 0;
+  position: relative;
+}
 
-  
-  .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    background-color: rgb(40, 40, 40);
-    /* margin-top: 3.5rem; */
-    padding: 1rem 0 1rem 0;
-    overflow: hidden;
-    height: 90vh;
-    position: relative;
-    gap: 1.5rem;
-  
-  
-  }
+.section .fondo {
+  border: none;
+  filter: blur(2.5px);
 
-  .section .fondo {
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    filter: blur(1.5px);
-    padding: 0;
-    border: none;
-    
-  }
+  height: 100%;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
 
-  .section .h2 {
-    z-index: 10;
-    color: wheat;
-    font-size: clamp(2.5rem, 10dvw, 3rem);
-    /* margin: 1.5rem; */
-    text-align: center;
-    padding: 1rem;
-    animation: fadeIn 1s ease;
-  }
+.section .divTittle {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  z-index: 13;
+}
 
-  .section .h3FED {
-    z-index: 11;
-    color: rgb(255, 255, 255);
-    /* margin: 1.5rem; */
-    font-size: clamp(1.5rem, 10dvw, 1.7rem);
-    text-align: center;
-    padding: 1rem;
-    animation: fadeIn 1s ease;
-  }
+.section .divTittle .h2 {
+  /* margin: 1.5rem; */
+  align-self: flex-start;
+  animation: fadeIn 1s ease;
+  color: wheat;
+  font-size: clamp(2.5rem, 10dvw, 3rem);
+  padding: 1rem;
+  z-index: 10;
+}
 
-  .section .h3 {
-    z-index: 12;
-    color: rgb(255, 255, 255);
-    /* margin: 1.5rem; */
-    font-size: clamp(1.5rem, 10dvw, 1.7rem);
-    align-self: center;
-    padding: 1rem;
-    animation: fadeIn 1s ease;
-  }
+.section .divTittle .h3FED {
+  align-self: flex-start;
+  animation: fadeIn 1s ease;
+  color: rgb(255, 255, 255);
+  /* margin: 1.5rem; */
+  font-size: clamp(1.5rem, 10dvw, 1.7rem);
+  padding: 1rem;
+  z-index: 11;
+}
 
-  .section .h3FED .guion {
-    color: white;
-    animation: activeDisable 1s infinite
-  }
+.section .divTittle .h3 {
+  align-self: flex-start;
+  animation: fadeIn 1s ease;
+  color: rgb(255, 255, 255);
+  /* margin: 1.5rem; */
+  font-size: clamp(1.5rem, 10dvw, 1.7rem);
+  padding: 1rem;
+  z-index: 11;
+}
 
- 
+.section .divTittle .h3FED .guion {
+  animation: activeDisable 1s infinite;
+  color: white;
+}
 
-  .section .div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 14;
-  }
+.section .div {
+  display: flex;
 
-  .section .div .p {
-    color: rgb(255, 255, 255);
-    padding: 0.5rem;
-  }
+  justify-content: space-between;
+  min-width: 355px;
+  padding: 0.5rem;
+  z-index: 14;
+}
 
-  .section .div .button {
-    border: none;
-    border-radius: 20px;
-    padding: 0.5rem;
-    margin: 1.5rem;
+.section .div .button {
+  animation: fadeIn 1s ease;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: rgb(31, 30, 30);
     border: 1px solid white;
-    transition: all 0.5s ease;
-    background-color: rgb(255, 255, 255);
-    animation: fadeIn 1s ease;
-
-    &:hover {
-      transform: scale(1.2);
-      background-color: rgb(31, 30, 30);
-      color: rgb(255, 255, 255);
-      border: 1px solid white;
-    }
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
   }
+}
 
-  .section .div .button .a {
-    text-decoration: none;
-    color: rgb(31, 30, 30);
-    height: 500px;
-    width: 80px;
-    transition: all 0.2s ease;
-    &:hover {
-      color: rgb(255, 255, 255);
-    }
+.section .div .button .a {
+  color: rgb(31, 30, 30);
+  height: 500px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  width: 80px;
+
+  &:hover {
+    color: rgb(255, 255, 255);
   }
+}
 
-  .section .div .button .a .svg {
-    font-size: clamp(1.5rem, 10dvw, 2rem);
-    transition: all 0.2s ease;
-  }
+.section .div .button .a .svg {
+  font-size: clamp(1.5rem, 10dvw, 2rem);
+  transition: all 0.2s ease;
+}
 
-  .section .flecha {
-    padding: 0.5rem;
-    max-width: 5rem;
-    align-self: center;
-    z-index: 15;
-    animation: fadeIn 1s ease;
+.section .flecha {
+  animation: fadeIn 1s ease;
 
-    animation: slideUpDown 1s infinite alternate;
-  }
-
-
- 
+  animation: slideUpDown 1s infinite alternate;
+  max-width: 5rem;
+  padding: 0.5rem;
+  z-index: 15;
+}
 
 /* small tablets and laptop styles */
 @media screen and (min-width: 768px) {
-  
-
   .section {
+    background-color: rgb(40, 40, 40);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: rgb(40, 40, 40);
-    padding: 1rem 0 1rem 0;
-    overflow: hidden;
-    height: 90vh;
-    position: relative;
     gap: 1.5rem;
-  
+    height: 90vh;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1rem 0 1rem 0;
+    position: relative;
+  }
+
+  .section .divTittle {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    z-index: 13;
   }
 
   .section .fondo {
+    border: none;
+    filter: blur(2.5px);
+    height: 100%;
+    padding: 0;
     position: absolute;
-    z-index: 0;
     top: 0;
     width: 100%;
-    height: 100%;
-    filter: blur(1.5px);
-    padding: 0;
-    border: none;
-    
+    z-index: 0;
   }
 
-  .section .h2 {
-    z-index: 10;
+  .section .divTittle .h2 {
+    animation: fadeIn 1s ease;
     color: wheat;
     font-size: clamp(2.5rem, 10dvw, 3rem);
     /* margin: 1.5rem; */
-    text-align: center;
+
     padding: 1rem;
-    animation: fadeIn 1s ease;
+    z-index: 10;
   }
 
-  .section .h3FED {
+  .section .divTittle .h3FED {
+    animation: fadeIn 1s ease;
+    color: rgb(255, 255, 255);
+    /* margin: 1.5rem; */
+    font-size: clamp(1.5rem, 10dvw, 1.7rem);
+    padding: 1rem;
+    text-align: center;
     z-index: 11;
+  }
+
+  .section .divTittle .h3 {
+    animation: fadeIn 1s ease;
     color: rgb(255, 255, 255);
     /* margin: 1.5rem; */
     font-size: clamp(1.5rem, 10dvw, 1.7rem);
-    text-align: center;
-    padding: 1rem;
-    animation: fadeIn 1s ease;
-  }
 
-  .section .h3 {
+    padding: 1rem;
     z-index: 12;
-    color: rgb(255, 255, 255);
-    /* margin: 1.5rem; */
-    font-size: clamp(1.5rem, 10dvw, 1.7rem);
-    align-self: center;
-    padding: 1rem;
-    animation: fadeIn 1s ease;
   }
 
-  .section .h3FED .guion {
+  .section .divTittle .h3FED .guion {
+    animation: activeDisable 1s infinite;
     color: white;
-    animation: activeDisable 1s infinite
   }
-
- 
 
   .section .div {
+    align-items: flex-start;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    min-width: 355px;
     z-index: 14;
   }
 
@@ -205,29 +203,30 @@
   }
 
   .section .div .button {
-    border: none;
-    border-radius: 20px;
-    padding: 0.5rem;
-    margin: 1.5rem;
-    border: 1px solid white;
-    transition: all 0.5s ease;
-    background-color: rgb(255, 255, 255);
     animation: fadeIn 1s ease;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    transition: all 0.5s ease;
 
     &:hover {
-      transform: scale(1.2);
       background-color: rgb(31, 30, 30);
-      color: rgb(255, 255, 255);
       border: 1px solid white;
+      color: rgb(255, 255, 255);
+      transform: scale(1.2);
     }
   }
 
   .section .div .button .a {
-    text-decoration: none;
     color: rgb(31, 30, 30);
     height: 500px;
-    width: 80px;
+    text-decoration: none;
     transition: all 0.2s ease;
+    width: 80px;
+
     &:hover {
       color: rgb(255, 255, 255);
     }
@@ -239,58 +238,55 @@
   }
 
   .section .flecha {
-    padding: 0.5rem;
-    max-width: 5rem;
     align-self: center;
-    z-index: 15;
     animation: fadeIn 1s ease;
 
     animation: slideUpDown 1s infinite alternate;
+    max-width: 5rem;
+    padding: 0.5rem;
+    z-index: 15;
   }
-
-  
 }
 
-
 /* desktop styles */
-@media  screen and (min-width: 1200px) {
-  
+@media screen and (min-width: 1200px) {
 }
 
 /* animations */
 @keyframes slideUpDown {
   0% {
-    transform : translateY(0)
+    transform: translateY(0);
   }
+
   100% {
-    transform: translateY(30px)
+    transform: translateY(30px);
   }
 }
 
 @keyframes activeDisable {
-0% {
-    visibility:visible;
- }
+  0% {
+    visibility: visible;
+  }
 
- 50% {
-  visibility: hidden;
- }
-100% {
-    visibility:hidden;
-}
+  50% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: hidden;
+  }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-      scale: 0.5;
-      transform: translateY(50px);
-  }
-  
-  to {
-    opacity: 1;
-      scale: 1;
-      transform: translateY(0px);
+    scale: 0.5;
+    transform: translateY(50px);
   }
 
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0px);
+  }
 }

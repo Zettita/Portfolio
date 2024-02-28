@@ -1,77 +1,4 @@
-@media screen and (max-width: 768px) {
-    .section {
-        background-color: rgb(40, 40, 40);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem 0 1rem 0;
-    }
-
-    .section .h3 {
-        color: wheat;
-        padding: 1rem;
-        margin: 0;
-        font-weight: 700;
-        font-size: clamp(1.5rem, 10dvw, 1.7rem);
-        /* view-timeline-name: --image;
-        view-timeline-axis: block;
-        animation-timeline: --image;
-        animation-name: fadeIn;
-        animation-duration: 1s;
-        animation-range: entry 5% cover 50%; */
-    }
-
-    .section .div {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .section .ulRow {
-        display: flex;
-        flex-wrap: wrap;
-        background-color: rgb(40, 40, 40);
-        list-style: none;
-        width: 100%;
-        margin: 0;
-        padding: 2rem;
-        justify-content: center;
-    }
-
-    .section .ulRow .li {
-        padding: 0.5rem;
-        
-    }
-
-    
-
-    .section .ulRow .img {
-        padding: 5px;
-        font-size: 3.5rem;
-        color: rgb(100, 100, 100);
-
-        &:hover {
-            filter: drop-shadow(1px 1px 5px rgb(224, 224, 224));
-        }
-    }
-
-    .section .ul {
-        display: none;
-        flex-wrap: wrap;
-        background-color: rgb(15, 15, 15);
-        list-style: none;
-
-        width: 100%;
-        margin: 0;
-
-        padding: 2rem;
-    }
-    
-}
-
-@media screen and (max-width: 520px) {
+/* mobile styles */
     .section {
         background-color: rgb(40, 40, 40);
 
@@ -141,7 +68,85 @@
             filter: drop-shadow(1px 1px 5px rgb(185, 185, 185));
         }
     }
+
+@media screen and (min-width: 768px) {
+    .section {
+        background-color: rgb(40, 40, 40);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0 1rem 0;
+        height: 25rem;
+    }
+
+    .section .h3 {
+        color: wheat;
+        padding: 1rem;
+        margin: 0;
+        font-weight: 700;
+        font-size: clamp(1.5rem, 10dvw, 1.7rem);
+        /* view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-range: entry 5% cover 50%; */
+    }
+
+    .section .div {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 80%;
+
+    }
+
+    .section .ulRow {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(40, 40, 40);
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 2rem;
+        justify-content: space-around;
+    }
+
+    .section .ulRow .li {
+        padding: 0.5rem;
+        
+    }
+
+    
+
+    .section .ulRow .img {
+        padding: 5px;
+        font-size: 4.5rem;
+        color: rgb(100, 100, 100);
+
+        &:hover {
+            filter: drop-shadow(1px 1px 5px rgb(224, 224, 224));
+        }
+    }
+
+    .section .ul {
+        display: none;
+        flex-wrap: wrap;
+        background-color: rgb(15, 15, 15);
+        list-style: none;
+
+        width: 100%;
+        margin: 0;
+
+        padding: 2rem;
+    }
+    
 }
+
+
 
 @keyframes fadeIn {
     from {

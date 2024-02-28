@@ -10,12 +10,15 @@ export default function Inicio() {
     <>
       <section className={styles.section}>
         <img className={styles.fondo} src={fondo} alt="" />
+        <div className={styles.divTittle}> 
         <h3 className={styles.h3}>¡Hola! soy</h3>
         <h2 className={styles.h2}>Uriel Solnik</h2>
         <h3 className={styles.h3FED}>
           Front-End Developer 
           <span className={styles.guion} id="guion">_</span>  
         </h3>
+        </div>
+       
         <div className={styles.div}>
           <button className={styles.button}>
             <a href="mailto:uriel.solnik@gmail.com" className={styles.a}>
