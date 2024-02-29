@@ -76,6 +76,9 @@
   .li {
     list-style: none;
     margin: 1.5rem;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   
   .a {
@@ -147,6 +150,7 @@
   .li {
     display: block;
     color: white;
+    
   }
 
   .a {
@@ -154,6 +158,9 @@
     text-decoration: none;
     font-size: 1rem;
     pointer-events: visible;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   
   .activo {

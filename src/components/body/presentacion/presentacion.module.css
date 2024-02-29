@@ -39,7 +39,7 @@
   background-image: url("../../../assets/fotoPerfil.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  border-radius: 10%;
+  border-radius: 50%;
   height: 250px;
   max-height: fit-content;
   min-width: 250px;
@@ -67,11 +67,9 @@
   text-align: justify;
   text-wrap: balance;
   width: 90%;
-  /* view-timeline-name: --image;
-        view-timeline-axis: block;
-        animation-timeline: --image;
-        animation-name: fadeIn;
-        animation-range: entry 5% cover 50%; */
+  &::selection {
+    color: white;
+  }
 }
 
 /* small tablets and laptop styles */

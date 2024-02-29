@@ -11,8 +11,10 @@
 
 .footer .h2 {
   color: rgb(100, 100, 100);
-
   font-size: 2rem;
+  &::selection {
+    color: white;
+  }
 }
 
 .footer .ul {
@@ -29,11 +31,13 @@
   margin: 0;
   font-size: 1.2rem;
   text-align: start;
+  
 }
 
 .footer .ul .li .svg {
   font-size: 1rem;
   color: rgb(100, 100, 100);
+  
 }
 
 .footer .ul .li .a {
@@ -41,6 +45,9 @@
   color: rgb(100, 100, 100);
 
   font-size: 1.2rem;
+  &::selection {
+    color: white;
+  }
 }
 .footer .span {
   background-color: rgb(20, 20, 20);
@@ -49,6 +56,9 @@
   text-align: center;
   font-weight: 100;
   font-size: 0.8rem;
+  &::selection {
+    color: white;
+  }
 }
 
 @media screen and (min-width: 520px) {

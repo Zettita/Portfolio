@@ -93,6 +93,9 @@
     border: 1px solid white;
     color: rgb(255, 255, 255);
     transform: scale(1.2);
+    & .a {
+      color: rgb(255, 255, 255);
+    }
   }
 }
 
@@ -103,9 +106,6 @@
   transition: all 0.2s ease;
   width: 100%;
 
-  &:hover {
-    color: rgb(255, 255, 255);
-  }
 }
 
 .section .div .button .a .svg {
@@ -218,6 +218,9 @@
       border: 1px solid white;
       color: rgb(255, 255, 255);
       transform: scale(1.2);
+      & .a {
+        color: rgb(255, 255, 255);
+      }
     }
   }
 
@@ -227,10 +230,6 @@
     text-decoration: none;
     transition: all 0.2s ease;
     width: 80px;
-
-    &:hover {
-      color: rgb(255, 255, 255);
-    }
   }
 
   .section .div .button .a .svg {

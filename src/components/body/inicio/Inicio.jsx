@@ -26,7 +26,7 @@ export default function Inicio() {
             </a>
           </button>
           <button className={styles.button}>
-            <a href="https://wa.me/5491169653078" className={styles.a}>
+            <a target="_blank" rel="noopener noreferrer" href="https://wa.me/5491169653078" className={styles.a}>
               <FaWhatsapp className={styles.svg} />
             </a>
           </button>
