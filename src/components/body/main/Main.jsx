@@ -11,8 +11,9 @@ export const Main = () => {
     <main className={styles.main}>
         <Inicio/>
         <Presentacion/>
-        <Skills/>
         <Proyectos />
+        <Skills/>
+        
     </main>
     </>
   )

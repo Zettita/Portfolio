@@ -43,7 +43,12 @@ export default function Proyectos() {
   return (
     <>
       <section className={styles.section} id="proyectos">
+      <div className={styles.divTittle}>
+      <span className={styles.span}></span>
         <h3 className={styles.h3}>Proyectos</h3>
+        <span className={styles.span}></span>
+        </div>
+        <div className={styles.divContainer}>
         <div className={styles.container}>
           <div className={styles.divFlechas}>
             <span className={styles.flechaIzquierda} onClick={goLeft}>
@@ -204,6 +209,7 @@ export default function Proyectos() {
                 </div>
               </div>
             </div>
+        </div>
         </div>
       </section>
       

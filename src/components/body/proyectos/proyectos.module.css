@@ -1,23 +1,47 @@
 /* mobile styles */
 .section {
   align-items: center;
-  /* background-color: rgb(40, 40, 40); */
   display: flex;
   flex-direction: column;
-  height: auto;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0;
-  padding: 4rem 0 4rem 0;
-  width: 100%;
+  padding-top: 5rem;
+  
 }
 
-.section .h3 {
-  color: wheat;
+.section .divTittle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.section .divContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.section .divTittle .h3 {
   font-size: clamp(1.5rem, 10dvw, 1.7rem);
-  font-weight: 700;
-  margin: 0;
+  text-wrap: nowrap;
+  width: auto;
+  filter: drop-shadow(2px 2px 5px black);
+  color: wheat;
   padding: 1rem;
 }
+
+.section .divTittle .span {
+  width: 100%;
+  height: 5px;
+  background-color: wheat;
+  filter: drop-shadow(2px 2px 5px black);
+}
+
+
 
 .section .container {
   background-color: rgb(80, 80, 80);
@@ -31,6 +55,7 @@
   padding: 1rem 0 1rem 0;
   position: relative;
   box-shadow: 1px 1px 4px black;
+  
   
 }
 
@@ -133,6 +158,7 @@
   font-size: 0.8rem;
   margin: 0;
   padding: 0.3rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .section .container .div .card .divCard .ul {
@@ -212,7 +238,7 @@
     justify-content: center;
 
     margin: 0;
-    padding: 4rem 0 4rem 0;
+    padding-top: 5rem;
     width: 100%;
   }
 
@@ -223,6 +249,8 @@
     margin: 0;
     padding: 1rem;
   }
+
+  
 
   .section .container {
     border-radius: 15px;
@@ -316,6 +344,7 @@
     color: white;
     font-size: 0.8rem;
     padding: 0.8rem;
+    font-family: "Roboto", sans-serif;
   }
 
   .section .container .div .card .divCard .ul {
@@ -332,7 +361,7 @@
     height: 40px;
     padding: 0.5rem;
     text-align: center;
-
+    box-shadow: 1px 1px 5px black;
     width: 40px;
   }
 
@@ -376,6 +405,7 @@
     color: white;
     font-size: 1.5rem;
     z-index: 9;
+    filter: drop-shadow(3px 3px 5px black);
     &:hover {
       transform: scale(1.3);
     }
@@ -414,9 +444,7 @@
 
 
 .section .divCardsContainer .card .divImagen {
-  width: 250px;
-  height: 60%;
-  width: 80%;
+  width: 100%;
   z-index: 9;
 }
 
@@ -424,11 +452,16 @@
   width: 100%;
 }
 
+.section .divCardsContainer .card .divCard{
+  min-width: 180px;
+}
+
 .section .divCardsContainer .card .divCard .h3 {
   color: white;
   font-size: 1.2rem;
   padding: 0.3rem;
   text-align: center;
+  
 }
 
 .section .divCardsContainer .card .divCard .p {
@@ -437,6 +470,7 @@
   margin: 0;
   padding: 0.3rem;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .section .divCardsContainer .card .divCard .ul {
@@ -446,6 +480,7 @@
   list-style: none;
   margin: 0;
   padding: 0.5rem;
+  justify-content: center;
 }
 
 .section .divCardsContainer .card .divCard .ul .li {
@@ -457,6 +492,7 @@
   padding: 0.5rem;
   text-align: center;
   width: 35px;
+  box-shadow: 1px 1px 5px black;
 }
 
 .section .divCardsContainer .card .divCard .ul .li .js {
@@ -465,12 +501,14 @@
   color: rgb(255, 255, 0);
   height: auto;
   width: 100%;
+  
 }
 .section .divCardsContainer .card .divCard .ul .li .html {
   fill: rgb(227, 76, 38);
   font-size: 1.5rem;
   height: auto;
   width: 100%;
+  
 }
 
 .section .divCardsContainer .card .divCard .ul .li .css {
@@ -500,9 +538,48 @@
   color: white;
   font-size: 1.5rem;
   z-index: 9;
+  filter: drop-shadow(3px 3px 5px black);
   &:hover {
     transform: scale(1.3);
   }
 }
 
+}
+
+@media screen and (min-width: 1200px) {
+
+  .section {
+    height: 90vh;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+  .section .divTittle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+  }
+
+  .section .divTittle .h3 {
+    font-size: 4.5rem;
+    text-wrap: nowrap;
+    width: auto;
+    filter: drop-shadow(2px 2px 5px black);
+  }
+
+  .section .divTittle .span {
+    width: 100%;
+    height: 10px;
+    background-color: wheat;
+    filter: drop-shadow(2px 2px 5px black);
+  }
+
+  .section .divCardsContainer {
+    padding: 2rem;
+  }
+  .section .divCardsContainer .card {
+    max-width: 400px;
+  }
 }

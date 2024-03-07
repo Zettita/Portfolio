@@ -5,7 +5,11 @@ export default function Skills() {
   return (
     <>
       <section className={styles.section} id="skills">
-        <h3 className={styles.h3}>Skills</h3>
+      <div className={styles.divTittle}>
+      <span className={styles.span}></span>
+        <h3 className={styles.h3}>Habilidades</h3>
+        <span className={styles.span}></span>
+        </div>
         <div className={styles.div}>
           <ul className={styles.ulRow}>
           <li className={styles.li}>

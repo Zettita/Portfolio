@@ -1,48 +1,62 @@
 /* mobile styles */
     .section {
-        /* background-color: rgb(40, 40, 40); */
-
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        padding: 1rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding-top: 5rem;
+  /* min-height: 850px; */
     }
 
-    .section .h3 {
-        color: wheat;
+    .section .divTittle {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+      }
+      
+      .section .divTittle .h3 {
         padding: 1rem;
-        margin: 0;
-        font-weight: 700;
+        color: wheat;
         font-size: clamp(1.5rem, 10dvw, 1.7rem);
-        /* view-timeline-name: --image;
-        view-timeline-axis: block;
-        animation-timeline: --image;
-        animation-name: fadeIn;
-        animation-duration: 1s;
-        animation-range: entry 5% cover 50%; */
-    }
+        text-wrap: nowrap;
+        width: auto;
+        filter: drop-shadow(2px 2px 5px black);
+      }
+      
+      .section .divTittle .span {
+        width: 100%;
+        height: 5px;
+        background-color: wheat;
+        filter: drop-shadow(2px 2px 5px black);
+      }
 
     .section .div {
         display: flex;
         justify-content: space-around;
         margin: 0;
-        padding: 0;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         box-sizing: border-box;
+        justify-self: center;
+        height: auto;
+        
     }
 
     .section .ul {
         display: flex;
         flex-wrap: wrap;
-        /* background-color: rgb(40, 40, 40); */
-
         list-style: none;
         flex-direction: column;
         width: 100%;
         margin: 0;
         flex-grow: 1;
-
-        flex-grow: 1;
-        padding: 2rem;
+        padding: 0 2rem 0 2rem;
+        justify-content: space-between;
+        gap: 2rem;
+        
     }
 
     .section .ulRow {
@@ -51,6 +65,7 @@
 
     .section .ul .li {
         padding: 0.5rem;
+        filter: drop-shadow(3px 3px 5px black);
         /* view-timeline-name: --image;
         view-timeline-axis: block;
         animation-timeline: --image;
@@ -66,11 +81,11 @@
         transition: .5s all linear;
 
         &:hover {
-            transform: rotate(360deg);
-            filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+            transform: scale(1.3);
+            filter: drop-shadow(0 0 5px rgb(0, 0, 0));
         }
     }
-
+/* Tablets and small laptops */
 @media screen and (min-width: 768px) {
     .section {
         /* background-color: rgb(40, 40, 40); */
@@ -78,8 +93,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1rem 0 1rem 0;
-        height: 25rem;
+        padding-top: 5rem;
+        
     }
 
     .section .h3 {
@@ -100,9 +115,9 @@
         display: flex;
         justify-content: center;
         margin: 0;
-        padding: 0;
+        padding: 5rem 0 5rem 0;
         box-sizing: border-box;
-        width: 80%;
+        width: 90%;
 
     }
 
@@ -119,6 +134,7 @@
 
     .section .ulRow .li {
         padding: 0.5rem;
+        filter: drop-shadow(3px 3px 5px black);
         
     }
 
@@ -128,11 +144,11 @@
         padding: 5px;
         font-size: 4.5rem;
         color: rgb(100, 100, 100);
-        transition: .5s all linear;
+        transition: .2s all linear;
 
         &:hover {
-            transform: rotate(360deg);
-            filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+            transform: scale(1.3);
+            filter: drop-shadow(0 0 5px rgb(0, 0, 0));
         }
     }
 
@@ -145,11 +161,57 @@
         width: 100%;
         margin: 0;
 
-        padding: 2rem;
+        
     }
     
 }
 
+/* Desktop */
+@media screen and (min-width: 1200px) {
+
+    .section {
+        height: 90vh;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    .section .divTittle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    
+      }
+    
+      .section .divTittle .h3 {
+        font-size: 4.5rem;
+        text-wrap: nowrap;
+        width: auto;
+        filter: drop-shadow(2px 2px 5px black);
+      }
+    
+      .section .divTittle .span {
+        width: 100%;
+        height: 10px;
+        background-color: wheat;
+        filter: drop-shadow(2px 2px 5px black);
+      }
+
+    .section .div {
+        width: 80%;
+    }
+
+    .section .ulRow {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .section .ulRow .img {
+        font-size: 6.5rem;
+    }
+    
+}
 
 
 @keyframes fadeIn {

@@ -17,7 +17,7 @@ export default function Header() {
 }
   return (
     <header className={styles.header}>
-      <h1 className={styles.h1}>Mi portfolio</h1>
+      <h1 className={styles.h1}>Portfolio</h1>
       <button id="button" className={styles.button} onClick={toggle}>
         {!isActive ? (
           <svg
@@ -49,14 +49,15 @@ export default function Header() {
               Acerca de mÍ
             </a>
           </li>
-          <li className={styles.li}>
-            <a href="#skills" className={styles.a} onClick={toggle}>
-              Skills
-            </a>
-          </li>
+          
           <li className={styles.li}>
             <a href="#proyectos" className={styles.a} onClick={toggle}>
               Proyectos
+            </a>
+          </li>
+          <li className={styles.li}>
+            <a href="#skills" className={styles.a} onClick={toggle}>
+              Habilidades
             </a>
           </li>
           <li className={styles.li}>
