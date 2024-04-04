@@ -13,13 +13,7 @@ export default function Presentacion() {
         <div className={styles.div}>
           <div className={styles.fotoDiv}></div>
           <p className={styles.p}>
-            Mi perfil laboral está centrado en el ámbito administrativo y
-            tecnológico, dos áreas que considero fundamentales en el mundo
-            actual. Sin embargo, mi pasión por la tecnología va más allá de la
-            gestión, ya que aspiro a convertirme en un desarrollador Full Stack.
-            Mi objetivo es combinar mis habilidades administrativas con un
-            conocimiento técnico profundo para crear soluciones innovadoras y
-            eficientes.
+          ¡Hola! Soy Uriel Solnik, tengo 25 años y soy argentino. Me considero un apasionado Front End Developer en constante evolución, también soy estudiante de Ingeniería en Informática. Mi viaje en el desarrollo web comenzó hace unos años, y desde entonces, mi objetivo es convertirme en un Full Stack Developer, fusionando mi experiencia en Front End con habilidades en Back End. Mi fascinación por la tecnología me acompaña desde mi infancia, donde desarmar y armar mis propias computadoras despertó mi interés por la misma y por la programación. Estoy en formación constante, siempre buscando aprender y mejorar en este emocionante campo.
           </p>
         </div>
       </section>
